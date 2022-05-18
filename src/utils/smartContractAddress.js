@@ -1,0 +1,1 @@
+export const smartContractAddress = "0x58e48eC450c290B5CC953302d39215cFA232a39a"
