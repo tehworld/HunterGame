@@ -6,12 +6,19 @@ import hiragino from "../fonts/hiragino-kaku-gothic.otf"
 const GlobalStyle = createGlobalStyle`
 
 @font-face {
-    font-family: fleshandblood;
-    src: url(${fleshandblood});
+    font-family: "fleshandblood";
+    font-style: normal;
+    src: url(${fleshandblood}) format("truetype");
+    font-display: swap;
+}
+@font-face {
+  font-family: "hiragino";
+  font-style: normal;
+  src: url(${hiragino}) format("opentype");
+  font-display: swap;
+}
 
-    font-family: hiragino;
-    src: url(${hiragino});
-  }
+    
   body {
     box-sizing: border-box;
     margin:0;

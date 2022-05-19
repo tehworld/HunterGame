@@ -1,15 +1,17 @@
 import React from 'react'
 import logo from "../../images/logobg.png"
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from "./NavBarElements"
+import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 
 function NavBar({ toggle, walletAddress, setWalletAddress}) {
   return (
     <>
     <Nav>
-      <NavLink to= "/">
-        <img src={logo} alt="" />
-      </NavLink>
-      <Bars onclick={toggle} />
+      <BarsWrapper>
+        <Bars onClick={toggle} />
+      </BarsWrapper>
+      <NavLogoLink to= "/">
+        <NavLogo src={logo} alt="" />
+      </NavLogoLink>
       <NavMenu>
         <NavLink to="/home" activeStyle>
           Home
