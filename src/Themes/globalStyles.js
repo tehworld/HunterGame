@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import fleshandblood from "../fonts/flesh-and-blood.ttf"
 import hiragino from "../fonts/hiragino-kaku-gothic.otf"
+import hiraginoLight from "../fonts/hiragino-light.otf"
 
 
 const GlobalStyle = createGlobalStyle`
@@ -12,9 +13,16 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
 }
 @font-face {
-  font-family: "hiragino";
+  font-family: "hiragino-bold";
   font-style: normal;
   src: url(${hiragino}) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "hiragino-light";
+  font-style: normal;
+  src: url(${hiraginoLight}) format("opentype");
   font-display: swap;
 }
 

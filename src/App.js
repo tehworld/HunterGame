@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import {BrowserRouter as Router} from "react-router-dom"
 import SideBar from "./components/SideBar";
 import HeroSection from "./components/HeroSection";
+import BackStory from "./components/Backstory";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
    <SideBar isOpen={isOpen} toggle={toggle} walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
    <NavBar  toggle={toggle}  walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
    <HeroSection />
+   <BackStory />
    </Router>
    </>
   );
