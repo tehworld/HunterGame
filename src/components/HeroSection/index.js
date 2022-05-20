@@ -12,12 +12,8 @@ function HeroSection() {
   return (
     <>
       <HeroContainer>
-      <H1Container>
+
           <HeroH1> A HUNTERS GAME</HeroH1>
-        </H1Container>
-        <HeroImageContainer>
-          {isDesktopOrmobile ? <HeroImage src={HunterImageMobile} /> : <HeroImage src={HunterImageDesktop} style={{}} />}
-        </HeroImageContainer>
 
         
       </HeroContainer>
