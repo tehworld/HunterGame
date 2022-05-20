@@ -3,6 +3,7 @@ import logo from "../../images/logobg.png"
 import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 
 function NavBar({ toggle, walletAddress, setWalletAddress}) {
+  
   return (
     <>
     <Nav>
