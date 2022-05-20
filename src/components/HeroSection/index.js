@@ -1,13 +1,9 @@
 import React from 'react'
-import {HeroContainer, HeroH1, H1Container, HeroImage, HeroImageContainer} from "./HeroSectionElements"
-import HunterImageMobile from "../../images/heroImageMobile.png"
-import HunterImageDesktop from "../../images/heroImageDesktop.png"
-import { useMediaQuery } from 'react-responsive'
+import {HeroContainer, HeroH1} from "./HeroSectionElements"
+
 
 function HeroSection() {
-  const isDesktopOrmobile = useMediaQuery({
-    query: '(max-width: 768px)'
-  })
+
 
   return (
     <>
