@@ -15,6 +15,7 @@ export const AccordionItem = styled.div`
     background-color: black;
     margin-bottom: 5px;
     padding: 10px 20px;
+    border: ${({selected, index}) => (selected === index ? "1px #57e2ad solid" : "")};
 
 `
 
@@ -23,6 +24,7 @@ export const AccordionTitleWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    
 `
 
 export const AccordionTitle = styled.h2`

@@ -19,9 +19,8 @@ const [selected, setSelected] = useState(null)
       <AccordionWrapper>
         <Accordion>
           {faqData.map((item, index) => (
-            <AccordionItem>
+            <AccordionItem selected={selected} index={index}>
               <AccordionTitleWrapper onClick={()=>toggleQuestion(index)}>
-
               <AccordionTitle >{item.question}</AccordionTitle>
               <AccordionIcon>{selected === index ? <HiChevronUp/> : <HiChevronDown/>}</AccordionIcon>
               </AccordionTitleWrapper>
