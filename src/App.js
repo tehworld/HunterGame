@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from "react-router-dom"
 import SideBar from "./components/SideBar";
 import HeroSection from "./components/HeroSection";
 import BackStory from "./components/Backstory";
+import Gallery from "./components/Gallery"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
    <NavBar  toggle={toggle}  walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
    <HeroSection />
    <BackStory />
+   <Gallery />
    </Router>
    </>
   );
