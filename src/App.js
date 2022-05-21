@@ -7,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import BackStory from "./components/Backstory";
 import Gallery from "./components/Gallery"
 import RoadMap from "./components/RoadMap"
+import FAQ from "./components/FAQ"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
    <BackStory />
    <Gallery />
    <RoadMap />
+   <FAQ />
    </Router>
    </>
   );
