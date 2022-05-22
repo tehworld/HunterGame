@@ -2,7 +2,7 @@ import styled from "styled-components"
 import {Colors} from "../../Themes/ThemeOne"
 
 export const FooterContainer = styled.footer`
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     width: 100%;
     margin: 0;
