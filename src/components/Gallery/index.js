@@ -16,14 +16,24 @@ import gallery5 from "../../images/gallery5.png"
 function Gallery() {
 
   return (
-    <>
+    <div style={{paddingTop:"3rem"}}>
       <Swiper
       spaceBetween={50}
-      slidesPerView={3}
+   
+      loop={true}
       navigation={true}
       modules={[Navigation]}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      breakpoints={{
+
+        1920: {
+          slidesPerView:3,
+        },
+        
+        768: {
+         
+          slidesPerView: 2,
+        },
+      }}
     >
       <SwiperSlide><GalleryImage src={gallery1} /></SwiperSlide>
       <SwiperSlide><GalleryImage src={gallery2} /></SwiperSlide>
@@ -32,7 +42,7 @@ function Gallery() {
       <SwiperSlide><GalleryImage src={gallery5} /></SwiperSlide>
     </Swiper>
     
-    </>
+    </div>
   )
 }
 

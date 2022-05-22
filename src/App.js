@@ -12,6 +12,7 @@ import Footer from "./components/Footer"
 import  MediaQuery from "react-responsive";
 import RoadMapMobile from "./components/RoadMapMobile";
 import MintingArea from "./components/MintingArea";
+import "./app.css"
 
 function App() {
 
