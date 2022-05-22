@@ -24,18 +24,7 @@ export const RoadMapImage = styled.img`
 
 export const TimerWrapper = styled.div`
     margin-top: -3rem;
-    padding-top: 3rem;
-
-    @media screen and (max-width: 1800px){
-        
-    }
-
-    @media screen and (max-width: 1600px){
-        
-    }
-    @media screen and (max-width: 1400px){
-        
-    }
+    padding-top: 3rem; 
 
     @media screen and (max-width: 1400px){
         font-size: 24px;
