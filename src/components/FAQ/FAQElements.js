@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {Colors} from "../../Themes/ThemeOne"
 
 
 export const AccordionWrapper = styled.div`
@@ -9,6 +10,7 @@ export const AccordionWrapper = styled.div`
     justify-content: center;
     align-items: center;
     font-family: "hiragino-light";
+    
 `
 
 export const Title = styled.h2`
@@ -20,6 +22,7 @@ export const Title = styled.h2`
 
 export const Accordion = styled.div`
     width: 50vw;
+    padding-bottom: 6.25vw;
 `
 
 export const AccordionItem = styled.div`
