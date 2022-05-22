@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: "hiragino", "fleshandblood", monospace, sans-serif;
+    font-family: "hiragino-light", "fleshandblood", monospace, sans-serif;
     text-shadow: none;
     background-color: #000000;
     overflow-x: hidden;

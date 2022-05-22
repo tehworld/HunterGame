@@ -8,7 +8,7 @@ import BackStory from "./components/Backstory";
 import Gallery from "./components/Gallery"
 import RoadMap from "./components/RoadMap"
 import FAQ from "./components/FAQ"
-
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
    <Gallery />
    <RoadMap />
    <FAQ />
+   <Footer />
    </Router>
    </>
   );
