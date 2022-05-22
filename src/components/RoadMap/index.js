@@ -9,9 +9,9 @@ import CountDownTimer from '../CountdownTimer'
 
 
 
-function RoadMap() {
+function RoadMap({daysHoursMinSecs}) {
 
-  const daysHoursMinSecs = {dy:1, hours:1, minutes:20, seconds:40}
+  
 
   return (
     <>

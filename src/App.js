@@ -21,7 +21,7 @@ function App() {
   const toggle = () => {
       setIsOpen(!isOpen)
   }
-
+    const daysHoursMinSecs = {dy:1, hours:1, minutes:20, seconds:40}
   
   return (
    <>
@@ -33,10 +33,10 @@ function App() {
    <BackStory />
    <Gallery />
    <MediaQuery maxDeviceWidth={768} >
-     <RoadMapMobile />
+     <RoadMapMobile daysHoursMinSecs={daysHoursMinSecs} />
    </MediaQuery>
    <MediaQuery minDeviceWidth={768} >
-     <RoadMap />
+     <RoadMap daysHoursMinSecs={daysHoursMinSecs} />
    </MediaQuery>
 
    
