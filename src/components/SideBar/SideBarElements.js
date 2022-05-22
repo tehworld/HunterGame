@@ -4,8 +4,8 @@ import { NavLink as Link } from "react-router-dom"
 import { Colors } from "../../Themes/ThemeOne";
 
 export const Overlay = styled.div`
-    width: 300vw;
-    height: 300vh;
+    width: 150vw;
+    height: 150vh;
     z-index: -100;
     background-color: #000;
     opacity: 25%;
@@ -26,7 +26,7 @@ export const SideBarContainer = styled.aside`
     left: 0;
     transition:0.3s ease-in-out;
     opacity: ${({isOpen}) => (isOpen ? "100%" : "0%")};
-    left: ${({ isOpen}) => (isOpen ? "0" : "-300%")}; 
+    left: ${({ isOpen}) => (isOpen ? "0" : "-150%")}; 
 `;
  
 export const CloseIcon = styled(FaTimes)`

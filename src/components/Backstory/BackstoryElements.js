@@ -3,6 +3,7 @@ import {Colors} from "../../Themes/ThemeOne"
 
 export const BackstoryContainer = styled.div` 
     width: 100%;
+    min-width: 375px;
     display: flex;
     justify-content: space-around;
 
