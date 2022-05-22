@@ -18,11 +18,20 @@ export const Title = styled.h2`
     font-family: "fleshandblood";
     font-size: 3vw;
     padding-top: 6vw;
+
+    @media screen and (max-width:768px){
+        font-size: 5vw;
+    }
+    
 `
 
 export const Accordion = styled.div`
     width: 50vw;
     padding-bottom: 6.25vw;
+
+    @media screen and (max-width:768px){
+        width: 75vw;
+    }
 `
 
 export const AccordionItem = styled.div`
@@ -48,6 +57,10 @@ export const AccordionTitle = styled.h2`
     font-size: 1.5vw;
     padding-bottom: 0;
 
+    @media screen and (max-width:768px){
+        font-size: 3vw;
+    }
+
 `
 
 export const AccordionIcon = styled.div`
@@ -56,9 +69,13 @@ export const AccordionIcon = styled.div`
 
 export const AccordionContent = styled.div`
     color: white;
-    font-size: 1vw;
+    font-size: 1.5vw;
     overflow: hidden;
     display: ${({selected, index}) => (selected === index ? "block": "none")};
     transition: all 0.2s ease-in-out;
+
+    @media screen and (max-width:768px){
+        font-size: 2.5vw;
+    }
 
 `
