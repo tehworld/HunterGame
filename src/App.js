@@ -9,15 +9,20 @@ import Gallery from "./components/Gallery"
 import RoadMap from "./components/RoadMap"
 import FAQ from "./components/FAQ"
 import Footer from "./components/Footer"
+import  MediaQuery from "react-responsive";
+import RoadMapMobile from "./components/RoadMapMobile";
 
 function App() {
 
   let [walletAddress, setWalletAddress] = useState("")
   const [isOpen, setIsOpen] = useState(false)
+  
 
   const toggle = () => {
       setIsOpen(!isOpen)
   }
+
+  
   return (
    <>
    <GlobalStyle />
@@ -27,7 +32,15 @@ function App() {
    <HeroSection />
    <BackStory />
    <Gallery />
-   <RoadMap />
+   <MediaQuery maxDeviceWidth={768} >
+     <RoadMapMobile />
+   </MediaQuery>
+   <MediaQuery minDeviceWidth={768} >
+     <RoadMap />
+   </MediaQuery>
+
+   
+   
    <FAQ />
    <Footer />
    </Router>
