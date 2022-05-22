@@ -14,13 +14,13 @@ function NavBar({ toggle, walletAddress, setWalletAddress}) {
         <NavLogo src={logo} alt="" />
       </NavLogoLink>
       <NavMenu>
-        <NavLink to="/home" activeStyle>
+        <NavLink to="/home" >
           Home
         </NavLink>
-        <NavLink to="/gallery" activeStyle>
+        <NavLink to="/gallery" >
           Gallery
         </NavLink>
-        <NavLink to="/wallet" activeStyle>
+        <NavLink to="/wallet">
           Wallet
         </NavLink>
         {/* {!walletAddress ? 

@@ -34,6 +34,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: "hiragino", "fleshandblood", monospace, sans-serif;
     text-shadow: none;
     background-color: #000000;
+    overflow-x: hidden;
+    width: 99vw;
 
     @media screen and (max-width: 850px){
       background-position: 25%;
