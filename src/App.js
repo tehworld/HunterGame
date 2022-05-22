@@ -11,6 +11,7 @@ import FAQ from "./components/FAQ"
 import Footer from "./components/Footer"
 import  MediaQuery from "react-responsive";
 import RoadMapMobile from "./components/RoadMapMobile";
+import MintingArea from "./components/MintingArea";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
    <HeroSection />
    <BackStory />
    <Gallery />
+   <MintingArea />
    <MediaQuery maxDeviceWidth={768} >
      <RoadMapMobile daysHoursMinSecs={daysHoursMinSecs} />
    </MediaQuery>
