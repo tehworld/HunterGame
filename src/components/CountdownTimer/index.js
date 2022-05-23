@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Timer, TimerWrapper } from './CountDownTimerElements';
 
 function CountDownTimer({daysHoursMinSecs}) {
+    
+    
 
     const {dy , hours , minutes , seconds } = daysHoursMinSecs;
     

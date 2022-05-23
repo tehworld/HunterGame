@@ -17,7 +17,7 @@ function NavBar({ toggle, walletAddress, setWalletAddress}) {
         <NavLink to="/home" >
           Home
         </NavLink>
-        <NavLink to="/gallery" >
+        <NavLink to="gallery" >
           Gallery
         </NavLink>
         <NavLink to="/wallet">

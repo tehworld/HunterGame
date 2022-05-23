@@ -2,8 +2,8 @@ import React, {useState,useEffect} from 'react'
 import ProgressBar from '../Progressbar'
 import {MintButtonWrapper, MintingContainer, Title, BatchesWrapper, BatchCard, EthIcon} from "./MintingAreaElements"
 import ethIcon from "../../images/eth-icon.png"
-function MintingArea() {
 
+function MintingArea() {
 
 // const [value, setValue] = useState(2000)
 

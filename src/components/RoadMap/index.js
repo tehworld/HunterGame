@@ -11,8 +11,6 @@ import CountDownTimer from '../CountdownTimer'
 
 function RoadMap({daysHoursMinSecs}) {
 
-  
-
   return (
     <>
     <RoadMapContainer>
@@ -22,22 +20,16 @@ function RoadMap({daysHoursMinSecs}) {
       <Subtitle>"This is just the beginning"</Subtitle>
       <RoadMapStagesWrapper>
         <RoadMapCardContainer>
-          <h3>11:00 UTC</h3>
+        <h3>1st June 2022 <br></br> 12:00 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}}/>
-          <StageCardWrapper>Hotbit IEO <br/> Bounce/wbstarter IDO</StageCardWrapper>
+          <StageCardWrapper>NFT Sales Launch</StageCardWrapper>
         </RoadMapCardContainer>
         <RoadMapCardContainer>
-          <h3>12:00 UTC</h3>
+          <h3>31st September 2022 <br></br> 12:00 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}} />
-          <StageCardWrapper>Sales Launch Date <br/> NFT Reveal Date</StageCardWrapper>
-        </RoadMapCardContainer>
-        <RoadMapCardContainer>
-          <h3>13:00 UTC</h3>
-          <img src={point} alt="point" />
-          <img src={line} alt="line" style={{margin: "1rem 0"}}/>
-          <StageCardWrapper>NFT Reveal Date <br /> Original Collection</StageCardWrapper>
+          <StageCardWrapper> NFT Reveal Date</StageCardWrapper>
         </RoadMapCardContainer>
       </RoadMapStagesWrapper>
       {/* <RoadMapImage src = {countdownImage}/> */}
