@@ -19,7 +19,7 @@ export const Title = styled.h2`
     padding-top: 5rem;
 
     @media screen and (max-width:1100px){
-        font-size: 22px;
+        font-size: 28px;
         padding-top: 2rem;
     }
 `
@@ -34,7 +34,7 @@ export const BatchesWrapper = styled.div`
 
     @media screen and (max-width:1100px){
         flex-direction: column;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 `
 
@@ -55,7 +55,7 @@ export const BatchCard = styled.div`
         text-align: center;
 
         @media screen and (max-width:1100px){
-            font-size: 22px;
+            font-size: 16px;
     }
     }
 
@@ -78,7 +78,13 @@ export const MintButtonWrapper = styled.div`
         font-family: "hiragino-light";
         font-size: 34px;
         font-weight: lighter;
+
+        @media screen and (max-width:1100px){
+        font-size: 16px;
     }
+    }
+
+    
 `
 
 export const EthIcon = styled.img`

@@ -11,7 +11,7 @@ export const ProgressBarContainer = styled.div`
     backdrop-filter: blur(14px);
 
     @media screen and (max-width:1100px){
-        height: 32px;
+        height: 24px;
     }
 
 `

@@ -1,5 +1,6 @@
 import React from 'react'
 import logosm from "../../images/logosm.png"
+import { connectWallet } from '../../utils/web3Functions'
 import {Overlay, SideBarContainer, Icon, CloseIcon,
   SideBarWrapper, SideBarMenu,SideBarLink,
   SideBtnWrap, SideBarbtnLink, SideBarLinkConnected, SideBarGlobalWrapper, Logo } from './SideBarElements'
@@ -17,21 +18,19 @@ function SideBar({isOpen, toggle, walletAddress, setWalletAddress}) {
             <Logo src={logosm}/>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="/home" onClick={toggle}>
+                    <SideBarLink href="#home" onClick={toggle}>
                         Home
                         </SideBarLink>
-                    <SideBarLink to="/gallery" onClick={toggle}>
+                    <SideBarLink href="#gallery" onClick={toggle}>
                         Gallery
                         </SideBarLink>
-                    <SideBarLink to="/wallet" onClick={toggle}>
+                    {/* <SideBarLink onClick={connectWallet}>
                         Wallet
-                        </SideBarLink>
-                </SideBarMenu>
-                {/* <SideBtnWrap>
-                {!walletAddress ? 
-                <SideBarbtnLink onClick = {connectWallet}>CONNECT WALLET</SideBarbtnLink> : 
-                <SideBarLinkConnected > WALLET CONNECTED</SideBarLinkConnected>}
-                </SideBtnWrap> */}
+                        </SideBarLink>*/}
+                        {!walletAddress ? 
+                <SideBarLink onClick = {connectWallet}>Connect Wallet</SideBarLink> : 
+                <SideBarLink > Wallet Connected</SideBarLink>}
+                </SideBarMenu> 
                 
             </SideBarWrapper>
         </SideBarContainer>

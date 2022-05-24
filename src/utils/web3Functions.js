@@ -31,7 +31,7 @@ export const connectWallet = async(setWalletAddress) => {
     }
   }
 
- export const mintAccessKey = async (smartContractAbi, smartContractAddress, setIsLoading) => {
+ export const mintNft = async (smartContractAbi, smartContractAddress, setIsLoading, price) => {
     try {
       const { ethereum } = window;
       if(ethereum) {
@@ -40,7 +40,7 @@ export const connectWallet = async(setWalletAddress) => {
         const connectedContract = new ethers.Contract(smartContractAddress, smartContractAbi.abi, signer);
         console.log("Going to pop wallet now to pay gas...")
 
-        let nftTxn = await connectedContract.mintToUser(1, 1, "0x", {value: ethers.utils.parseEther("0.001"), gasLimit:100000});
+        let nftTxn = await connectedContract.mintNFTs(1, {value: ethers.utils.parseEther(`${price}`), gasLimit:100000});
 
         console.log("Mining...please wait")
 
@@ -102,7 +102,7 @@ export const connectWallet = async(setWalletAddress) => {
 
         //This is the important part
         //We "capture" the event that the contract emits
-        connectedContract.on("newNFTMinted", (from, tokenId) => {
+        connectedContract.on("NFTMinted", (number, tokenId, from) => {
           console.log(from, tokenId.toNumber())
           renderedTokenId = tokenId.toNumber()
 
@@ -126,7 +126,7 @@ export const connectWallet = async(setWalletAddress) => {
 
         console.log("Checking Number of Minted NFTS on Collection")
 
-        let nftNumber = await connectedContract.getTotalSupplyByTokenId(1);
+        let nftNumber = await connectedContract.getCurrentId();
         setMintedNumber(parseInt(nftNumber,10))
 
         console.log(`Total NFT´s Minted so far: ${parseInt(nftNumber,10)}`);
