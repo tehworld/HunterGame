@@ -72,7 +72,7 @@ export const SideBarMenu = styled.ul`
     }
 `;
 
-export const SideBarLink = styled(Link)`
+export const SideBarLink = styled.a`
     display:flex;
     align-items: center;
     justify-content: left;

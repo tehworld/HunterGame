@@ -76,6 +76,7 @@ const calculateTimeLeft = () => {
       <MediaQuery minDeviceWidth={768} >
         <RoadMap daysHoursMinSecs={daysHoursMinSecs} />
       </MediaQuery>
+
       <FAQ />
       <Footer />
    </Router>

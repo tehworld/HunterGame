@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../../images/logobg.png"
+import { connectWallet } from '../../utils/web3Functions'
 import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 
 function NavBar({ toggle, walletAddress, setWalletAddress}) {
@@ -14,18 +15,18 @@ function NavBar({ toggle, walletAddress, setWalletAddress}) {
         <NavLogo src={logo} alt="" />
       </NavLogoLink>
       <NavMenu>
-        <NavLink to="/home" >
+        <NavLink href="#home" >
           Home
         </NavLink>
-        <NavLink to="gallery" >
+        <NavLink href="#gallery" >
           Gallery
         </NavLink>
-        <NavLink to="/wallet">
+        {/* <NavLink onClick={connectWallet}>
           Wallet
-        </NavLink>
-        {/* {!walletAddress ? 
-          <NavbtnLink onClick = {connectWallet}>CONNECT WALLET</NavbtnLink> : 
-          <NavbtnLinkConnected > WALLET CONNECTED</NavbtnLinkConnected>} */}
+        </NavLink> */}
+        {!walletAddress ? 
+          <NavLink onClick = {connectWallet}>Connect Wallet</NavLink> : 
+          <NavLink >Wallet Connected</NavLink>}
       </NavMenu>
     </Nav>
     

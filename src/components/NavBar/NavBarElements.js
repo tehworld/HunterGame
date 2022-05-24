@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     }
 `
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
     color: #000;
     font-family: "fleshandblood";
     font-size: 22px;
@@ -28,8 +28,10 @@ export const NavLink = styled(Link)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    max-height: 2px;
     cursor: pointer;
     opacity: 0.75;
+    
 
     &.active {
         opacity: 1;

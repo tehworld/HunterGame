@@ -16,7 +16,7 @@ function MintingArea() {
         <BatchesWrapper>
           <BatchCard>
             <h3>0 to 2.999 NFTs</h3>
-            <ProgressBar valueProgress={33}/>
+            <ProgressBar valueProgress={0}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
               <h4>0.1 ETH</h4>
@@ -24,15 +24,15 @@ function MintingArea() {
           </BatchCard>
           <BatchCard>
             <h3>3000 to 8.999 NFTs</h3>
-            <ProgressBar valueProgress={75}/>
+            <ProgressBar valueProgress={0}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
               <h4>0.2 ETH</h4>
             </MintButtonWrapper>
           </BatchCard>
           <BatchCard style={{paddingRight:"0"}}>
-            <h3>9000 to 1000 NFTs</h3>
-            <ProgressBar valueProgress={90}/>
+            <h3>9000 to 9999 NFTs</h3>
+            <ProgressBar valueProgress={0}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
               <h4>0.3 ETH</h4>
