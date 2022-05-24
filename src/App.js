@@ -16,11 +16,13 @@ import "./app.css"
 import {smartContractAbi} from "./utils/smartContractAbi"
 import {smartContractAddress} from "./utils/smartContractAddress"
 import {checkIfWalletIsConnected} from "./utils/web3Functions"
+import MintNFT from "./components/MintNFTArea";
 
 function App() {
 
   let [walletAddress, setWalletAddress] = useState("")
   const [isOpen, setIsOpen] = useState(false)
+  const [mintedNumber, setMintedNumber] = useState(0)
   
 
   const toggle = () => {
@@ -68,6 +70,7 @@ const calculateTimeLeft = () => {
       <NavBar  toggle={toggle}  walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
       <HeroSection />
       <BackStory />
+      <MintNFT smartContractAbi={smartContractAbi} smartContractAddress={smartContractAddress} setMintedNumber={setMintedNumber} walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
       <Gallery id="gallery" />
       <MintingArea />
       <MediaQuery maxDeviceWidth={768} >

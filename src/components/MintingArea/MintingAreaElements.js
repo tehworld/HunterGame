@@ -50,12 +50,12 @@ export const BatchCard = styled.div`
 
     h3 {
         font-family: "hiragino-light";
-        font-size: 12px;
+        font-size: 24px;
         font-weight: lighter;
         text-align: center;
 
         @media screen and (max-width:1100px){
-            font-size: 22px;
+            font-size: 16px;
     }
     }
 
@@ -80,7 +80,7 @@ export const MintButtonWrapper = styled.div`
         font-weight: lighter;
 
         @media screen and (max-width:1100px){
-        font-size: 24px;
+        font-size: 16px;
     }
     }
 

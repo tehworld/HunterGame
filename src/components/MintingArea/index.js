@@ -5,9 +5,6 @@ import ethIcon from "../../images/eth-icon.png"
 
 function MintingArea() {
 
-// const [value, setValue] = useState(2000)
-
-
 
   return (
     <>
