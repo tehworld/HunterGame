@@ -15,9 +15,16 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 2rem;
 
     @media screen and (max-width: 2000px){
-        height: 80vh;;
+        height: 80vh;
+        
+    }
+
+    @media screen and (max-width: 1800px){
+        height: 70vh;
+        
     }
 
     @media screen and (max-width: 1500px){
@@ -27,11 +34,13 @@ export const HeroContainer = styled.div`
 
     @media screen and (max-width: 1200px){
         height: 50vh;
+        padding-top: 1.5rem;
 
     }
 
     @media screen and (max-width: 900px){
         height: 40vh;
+        
 
     }
 
@@ -39,7 +48,14 @@ export const HeroContainer = styled.div`
     @media screen and (max-width: 768px){
         background-image: url(${HunterImageMobile});
         height: 80vh;
-     
+        padding-top: 200px;
+        align-items: flex-end;
+
+}
+@media screen and (max-width: 480px){
+        background-image: url(${HunterImageMobile});
+        height: 80vh;
+        padding-top: 150px;
         align-items: flex-end;
 
 }
