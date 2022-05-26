@@ -31,7 +31,7 @@ export const connectWallet = async(setWalletAddress) => {
     }
   }
 
- export const mintNft = async (smartContractAbi, smartContractAddress, setIsLoading, price) => {
+ export const mintNft = async (number, smartContractAbi, smartContractAddress, setIsLoading, price) => {
     try {
       const { ethereum } = window;
       if(ethereum) {
@@ -40,7 +40,7 @@ export const connectWallet = async(setWalletAddress) => {
         const connectedContract = new ethers.Contract(smartContractAddress, smartContractAbi.abi, signer);
         console.log("Going to pop wallet now to pay gas...")
 
-        let nftTxn = await connectedContract.mintNFTs(1, {value: ethers.utils.parseEther(`${price}`), gasLimit:100000});
+        let nftTxn = await connectedContract.mintNFTs(number, {value: ethers.utils.parseEther(`${price}`)});
 
         console.log("Mining...please wait")
 

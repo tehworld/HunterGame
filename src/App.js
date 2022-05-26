@@ -40,7 +40,8 @@ function App() {
 
 const calculateTimeLeft = () => {
   let year = new Date().getFullYear();
-  let difference = +new Date(`01/06/${year}`) - +new Date();
+  //Month day year
+  let difference = +new Date(`06/01/${year}`) - +new Date();
 
   let timeLeft = {};
 
@@ -56,11 +57,11 @@ const calculateTimeLeft = () => {
   return timeLeft;
 }
 
-  //  let daysHoursMinSecs = calculateTimeLeft()
+  let daysHoursMinSecs = calculateTimeLeft()
 
 
   
-  const daysHoursMinSecs = {dy:6, hours:1, minutes:20, seconds:40}
+  //const daysHoursMinSecs = {dy:6, hours:1, minutes:20, seconds:40}
   
   return (
    <>

@@ -24,7 +24,7 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
     }
 
     const mintNow = () =>{
-         mintNft(smartContractAbi, smartContractAddress, setIsLoading, price)
+         mintNft(1, smartContractAbi, smartContractAddress, setIsLoading, price)
     }
 
     const connectWalletHandler = () => {
