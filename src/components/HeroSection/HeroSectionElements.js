@@ -4,25 +4,34 @@ import HunterImageMobile from "../../images/heroImageMobile.png"
 import HunterImageDesktop from "../../images/heroImageDesktop.png"
 
 export const HeroContainer = styled.div`
-    height:100vh;
+    height: 100vh;
     width: auto;
     background-image: url(${HunterImageDesktop});
     background-size: 'contain';
     overflow: 'hidden';
     background-size: 100%;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: 2000px){
+        height: 80vh;;
+    }
 
     @media screen and (max-width: 1500px){
         height: 60vh;
 
     }
 
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 1200px){
         height: 50vh;
+
+    }
+
+    @media screen and (max-width: 900px){
+        height: 40vh;
 
     }
 
