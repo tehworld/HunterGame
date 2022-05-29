@@ -21,6 +21,7 @@ export const RoadMapCardContainerMobile = styled.div`
     align-items: center;
     margin-right: 1vw;
     padding-bottom: 4vw;
+    text-align: center;
  
 `
 

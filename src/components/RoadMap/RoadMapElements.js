@@ -57,7 +57,7 @@ export const RoadMapStagesWrapper = styled.div`
     display: flex;
 
     @media screen and (max-width: 2500px){
-        margin-top: -3.5rem;
+        margin-top: -6.5rem;
     }
 
     @media screen and (max-width: 2300px){
@@ -102,6 +102,8 @@ export const RoadMapCardContainer = styled.div`
     align-items: center;
     margin-right: 1vw;
     padding-bottom: 4vw;
+    text-align: center;
+
  
 `
 

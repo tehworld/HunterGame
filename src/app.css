@@ -1,0 +1,12 @@
+.swiper-wrapper {
+    background-image: url("./images/progress-bg.png");
+    
+}
+.swiper-slide {
+    background-image: url("./images/progress-bg.png");
+    
+}
+
+span.swiper-pagination-bullet {
+    background-color: #57e2ad;
+}

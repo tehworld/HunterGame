@@ -31,26 +31,18 @@ function RoadMapMobile({daysHoursMinSecs}) {
     >
       <SwiperSlide>
           <RoadMapCardContainerMobile>
-          <h3>11:00 UTC</h3>
+          <h3>1st June 2022 <br></br> 12:00 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}}/>
-          <StageCardWrapperMobile>Hotbit IEO <br/> Bounce/wbstarter IDO</StageCardWrapperMobile>
+          <StageCardWrapperMobile>NFT Sales Launch</StageCardWrapperMobile>
         </RoadMapCardContainerMobile></SwiperSlide>
       <SwiperSlide>        
           <RoadMapCardContainerMobile>
-          <h3>12:00 UTC</h3>
+          <h3>31st September 2022 <br></br> 12:00 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}} />
-          <StageCardWrapperMobile>Sales Launch Date <br/> NFT Reveal Date</StageCardWrapperMobile>
+          <StageCardWrapperMobile>NFT Reveal Date</StageCardWrapperMobile>
         </RoadMapCardContainerMobile></SwiperSlide>
-      <SwiperSlide>
-          <RoadMapCardContainerMobile>
-          <h3>13:00 UTC</h3>
-          <img src={point} alt="point" />
-          <img src={line} alt="line" style={{margin: "1rem 0"}}/>
-          <StageCardWrapperMobile>NFT Reveal Date <br /> Original Collection</StageCardWrapperMobile>
-        </RoadMapCardContainerMobile></SwiperSlide>
-
     </Swiper>
     
     </>
