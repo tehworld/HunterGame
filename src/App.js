@@ -73,7 +73,7 @@ const calculateTimeLeft = () => {
       <BackStory />
       <MintNFT smartContractAbi={smartContractAbi} smartContractAddress={smartContractAddress} setMintedNumber={setMintedNumber} walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
       <Gallery id="gallery" />
-      <MintingArea id= "mint"/>
+      <MintingArea id= "mint" mintedNumber={mintedNumber}/>
       <MediaQuery maxDeviceWidth={768} >
         <RoadMapMobile daysHoursMinSecs={daysHoursMinSecs} />
       </MediaQuery>
