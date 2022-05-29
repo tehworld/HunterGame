@@ -7,7 +7,7 @@ function BackStory() {
       <BackstoryContainer>
         <TitleWrapper>
           {/* <SmallText>OUR STORY</SmallText> */}
-          <Title> WELCOME TO THE HUNTER GAME</Title>
+          <Title> WELCOME TO A HUNTERS GAME</Title>
         </TitleWrapper>
         <TextWrapper>
           <Text>The 10,000 Hunters are part of a collective entity tied to a common goal of forging a New World. 
