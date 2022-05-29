@@ -15,7 +15,7 @@ export const faqData = [
         <ul>
         <li>0.1 eth from 0 to 2999 NFT</li>
         <li>0.2 eth from 3000 to 8999 NFT</li>
-        <li>0.3 eth from 9000 to 10000 NFT</li>
+        <li>0.3 eth from 9000 to 9999 NFT</li>
         </ul> 
         `
     },

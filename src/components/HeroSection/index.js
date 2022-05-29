@@ -8,7 +8,7 @@ function HeroSection() {
 
   return (
     <>
-      <HeroContainer>
+      <HeroContainer id="home">
       <MediaQuery maxDeviceWidth={768} >
           <HeroH1> A HUNTERS GAME</HeroH1>
       </MediaQuery>

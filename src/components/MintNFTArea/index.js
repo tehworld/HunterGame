@@ -33,7 +33,7 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
 
   return (
     <>
-        <MintingWrapper>
+        <MintingWrapper id="mint">
             <Title>Mint your Hunter</Title>
             <MintingImageWrapper>
             <MintingImage src={coverImage}/>

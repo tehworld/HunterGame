@@ -69,11 +69,11 @@ const calculateTimeLeft = () => {
    <Router>
       <SideBar isOpen={isOpen} toggle={toggle} walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
       <NavBar  toggle={toggle}  walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
-      <HeroSection />
+      <HeroSection id="home"/>
       <BackStory />
       <MintNFT smartContractAbi={smartContractAbi} smartContractAddress={smartContractAddress} setMintedNumber={setMintedNumber} walletAddress={walletAddress} setWalletAddress={setWalletAddress}/>
       <Gallery id="gallery" />
-      <MintingArea />
+      <MintingArea id= "mint"/>
       <MediaQuery maxDeviceWidth={768} >
         <RoadMapMobile daysHoursMinSecs={daysHoursMinSecs} />
       </MediaQuery>
