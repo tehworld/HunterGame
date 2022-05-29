@@ -32,6 +32,7 @@ export const connectWallet = async(setWalletAddress) => {
   }
 
  export const mintNft = async (number, smartContractAbi, smartContractAddress, setIsLoading, price) => {
+
     try {
       const { ethereum } = window;
       if(ethereum) {
