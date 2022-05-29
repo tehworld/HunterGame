@@ -6,7 +6,7 @@ function BackStory() {
     <>
       <BackstoryContainer>
         <TitleWrapper>
-          <SmallText>OUR STORY</SmallText>
+          {/* <SmallText>OUR STORY</SmallText> */}
           <Title> WELCOME TO THE HUNTER GAME</Title>
         </TitleWrapper>
         <TextWrapper>

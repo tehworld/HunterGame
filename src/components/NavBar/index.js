@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../../images/logobg.png"
+import logo from "../../images/logo-inv-v2.png"
 import { connectWallet } from '../../utils/web3Functions'
 import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 

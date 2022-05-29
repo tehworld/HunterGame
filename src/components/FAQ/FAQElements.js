@@ -69,7 +69,7 @@ export const AccordionIcon = styled.div`
 
 export const AccordionContent = styled.div`
     color: white;
-    font-size: 1.5vw;
+    font-size: 1vw;
     overflow: hidden;
     display: ${({selected, index}) => (selected === index ? "block": "none")};
     transition: all 0.2s ease-in-out;
