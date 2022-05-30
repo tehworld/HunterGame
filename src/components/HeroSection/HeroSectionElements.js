@@ -6,7 +6,8 @@ import HunterImageDesktop from "../../images/heroImageDesktop.png"
 export const HeroContainer = styled.div`
     height: auto;
     width: 100%;
-    min-height: 780px;
+    /* min-height: 780px; */
+    min-width: 375px;
     background-image: url(${HunterImageDesktop});
     background-size: 'contain';
     overflow: 'hidden';
@@ -77,46 +78,47 @@ export const HeroContainer = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 550px;
-        padding-top: 200px;
-        align-items: flex-end;
+        background-position: center;
+        /* min-height: 550px;
+        padding-top: 200px; */
+        align-items: flex-start;
 
 }
 
 
     @media screen and (max-width: 690px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 500px;
+        /* min-height: 500px; */
 
 }
 
     @media screen and (max-width: 590px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 410px;
+        /* min-height: 410px; */
 
 }
 
 @media screen and (max-width: 530px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 320px;
+        /* min-height: 320px; */
 
 }
 
 @media screen and (max-width: 480px){
-        background-image: url(${HunterImageMobile});
-        height: auto;
+        /* background-image: url(${HunterImageMobile}); */
+        height: 20%;
         width: 100%;
-        padding-top: 0px;
-        min-height: 450px;
+        /* padding-top: 0px;
+        min-height: 450px; */
     
 
 }
@@ -124,8 +126,8 @@ export const HeroContainer = styled.div`
 @media screen and (max-width: 400px){
     height: auto;
     width: 100%;
-    padding-top: 0px;
-    min-height: 400px;
+    /* padding-top: 0px;
+    min-height: 400px; */
 }
 `
 
