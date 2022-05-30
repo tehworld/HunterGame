@@ -71,13 +71,15 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
             </NumberControlWrapper>
             
         <MintingButtonContainer>
-        <EthIcon src={ethIcon}/>
-        <h4 style={{fontSize:"20px"}}>{`${(price*number).toFixed(1)} ETH`}</h4>
-        {!walletAddress ? 
-        <StyledButton onClick={connectWalletHandler} isLoading={isLoading}>Connect Wallet</StyledButton> :
-        <StyledButton onClick={mintNow} isLoading={isLoading}> {isLoading === false ? 
-        "Mint" : 
-        <LoadingWrapper><ReactLoading type={"cylon"} color={"#57e2ad"} /></LoadingWrapper>}</StyledButton> }
+            <EthIcon src={ethIcon}/>
+            <h4 style={{fontSize:"20px"}}>{`${(price*number).toFixed(1)} ETH`}</h4>
+            {!walletAddress ? 
+            <StyledButton onClick={connectWalletHandler} isLoading={isLoading}>Mint</StyledButton> 
+            :
+            <StyledButton onClick={mintNow} isLoading={isLoading}> {isLoading === false ? 
+            "Mint" : 
+            <LoadingWrapper><ReactLoading type={"cylon"} color={"#57e2ad"} /></LoadingWrapper>}
+            </StyledButton> }
         </MintingButtonContainer>
         { renderedTokenId ?
         <SuccessTextWrapper><p>Success! NFT Minted. </p> <br></br><OpenseaText>See in

@@ -118,26 +118,33 @@ export const SideBarRoute = styled(Link)`
     }
 `;
 
-export const SideBarbtnLink = styled.button`
-    white-space: nowrap;
-    padding: 10px 22px;
-    margin: 1rem;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
+export const SideBarbtnLink = styled.a`
+    border-radius: 4px;
+    
+    font-family: "fleshandblood";
+    font-size: 1.5rem;
+    background: transparent;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    color: #000;
+    border: 1px solid #000;
     outline: none;
-    border: 2px solid #fff;
-    background-color: transparent;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
-        transition: all 0.2 ease-in-out;
-        background-color: ${Colors.purple};
-        color: black;
+        transition: all 0.2s ease-in-out;
         
+        color: ${Colors.primary};
+        border: 1px solid black;
+        background-color: black;
+        ;
     }
+
 `;
 
 export const SideBarLinkConnected = styled.button`
@@ -154,4 +161,24 @@ export const SideBarLinkConnected = styled.button`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 
+`
+
+export const WalletAddress = styled.p`
+    color: black;
+    font-family: "hiragino-light";
+    margin-top: -1.5rem;
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 0.25rem;
+
+    @media screen and (max-width: 1280px) {
+        
+    }
+
+    @media screen and (max-width: 850px){
+    font-size:12px;
+
+    
+    
+}
 `

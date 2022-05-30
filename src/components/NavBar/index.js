@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../../images/logo-inv-v2.png"
 import { connectWallet } from '../../utils/web3Functions'
+import { SideBarbtnLink } from '../SideBar/SideBarElements'
 import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, WalletAddress, WalletWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 
 function NavBar({ toggle, walletAddress, setWalletAddress}) {
@@ -32,7 +33,7 @@ function NavBar({ toggle, walletAddress, setWalletAddress}) {
         {walletAddress && <WalletAddress>{walletAddress.slice(0,5)} ... {walletAddress.slice(-5)}</WalletAddress>}
         </WalletWrapper>
          <NavBtnLink href="#mint">
-          Mint Now
+          Mint
         </NavBtnLink>
         
       </NavMenu>
