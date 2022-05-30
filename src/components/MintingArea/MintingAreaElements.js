@@ -18,7 +18,7 @@ export const Title = styled.h2`
     font-weight: lighter;
     padding-top: 5rem;
 
-    @media screen and (max-width:1100px){
+    @media screen and (max-width:900px){
         font-size: 28px;
         padding-top: 2rem;
     }
@@ -32,7 +32,7 @@ export const BatchesWrapper = styled.div`
     padding-bottom: 5rem;
    
 
-    @media screen and (max-width:1100px){
+    @media screen and (max-width:900px){
         flex-direction: column;
         padding-bottom: 1rem;
     }
@@ -54,12 +54,12 @@ export const BatchCard = styled.div`
         font-weight: lighter;
         text-align: center;
 
-        @media screen and (max-width:1100px){
+        @media screen and (max-width:900px){
             font-size: 16px;
     }
     }
 
-    @media screen and (max-width:1100px){
+    @media screen and (max-width:900px){
         width: 100%;
         padding-right: 0;
         margin-right: 0;

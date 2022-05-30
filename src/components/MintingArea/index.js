@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import ProgressBar from '../Progressbar'
 import {MintButtonWrapper, MintingContainer, Title, BatchesWrapper, BatchCard, EthIcon} from "./MintingAreaElements"
 import ethIcon from "../../images/eth-icon.png"
+import { useMediaQuery } from 'react-responsive'
 
 function MintingArea({mintedNumber}) {
   let valueProgress1
@@ -22,6 +23,8 @@ function MintingArea({mintedNumber}) {
     valueProgress3 = (((mintedNumber-8999)/1000)*100)
   }
 
+  let needsJump = useMediaQuery({query:"(max-width: 1100px)"})
+
 
   return (
     <>
@@ -29,7 +32,7 @@ function MintingArea({mintedNumber}) {
         <Title> BATCH QUANTITY</Title>
         <BatchesWrapper>
           <BatchCard>
-            <h3>0 to 2.999 NFTs</h3>
+            <h3>0 to 2.999 {needsJump && <br></br>}NFTs</h3>
             <ProgressBar valueProgress={valueProgress1}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
