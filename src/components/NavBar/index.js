@@ -4,6 +4,10 @@ import { connectWallet } from '../../utils/web3Functions'
 import {Nav, NavLink, Bars, NavMenu, NavLogo, NavLogoLink,BarsWrapper, WalletAddress, WalletWrapper, NavBtn, NavBtnLink} from "./NavBarElements"
 
 function NavBar({ toggle, walletAddress, setWalletAddress}) {
+
+  const connectWalletHandler = () => {
+    connectWallet(setWalletAddress)
+  }
   
   return (
     <>
@@ -23,7 +27,7 @@ function NavBar({ toggle, walletAddress, setWalletAddress}) {
         </NavLink>
         <WalletWrapper>
         {!walletAddress ? 
-          <NavLink onClick = {connectWallet}>Connect Wallet</NavLink> : 
+          <NavLink onClick = {connectWalletHandler}>Connect Wallet</NavLink> : 
           <NavLink style={{paddingTop:"1.8rem"}} >Wallet Connected</NavLink>}
         {walletAddress && <WalletAddress>{walletAddress.slice(0,5)} ... {walletAddress.slice(-5)}</WalletAddress>}
         </WalletWrapper>
