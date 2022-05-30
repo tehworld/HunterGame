@@ -54,8 +54,8 @@ export const GalleryImage = styled.img`
     object-fit: cover;
 
     @media screen and (max-width:768px){
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
 
     @media screen and (min-width:1400px){
