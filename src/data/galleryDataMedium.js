@@ -1,13 +1,13 @@
-import galleryImage1 from "../images/gallery1.png"
-import galleryImage2 from "../images/gallery3.png"
-import galleryImage3 from "../images/gallery5.png"
-import galleryImage4 from "../images/gallery6.png"
-import galleryImage5 from "../images/gallery2.png"
-import galleryImage6 from "../images/gallery9.png"
-import galleryImage7 from "../images/gallery4.png"
-import galleryImage8 from "../images/gallery7.png"
-import galleryImage9 from "../images/gallery10.png"
-import galleryImage10 from "../images/gallery8.png"
+import galleryImage1 from "../images/earl.png"
+import galleryImage2 from "../images/frost.png"
+import galleryImage3 from "../images/inferno.png"
+import galleryImage4 from "../images/guardian.png"
+import galleryImage5 from "../images/bishop.png"
+import galleryImage6 from "../images/nobility.png"
+import galleryImage7 from "../images/santa.png"
+import galleryImage8 from "../images/soul.png"
+import galleryImage9 from "../images/vampire.png"
+import galleryImage10 from "../images/undead.png"
 
 
 export const galleryDataMedium = [

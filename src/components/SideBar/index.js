@@ -3,10 +3,14 @@ import logosm from "../../images/logosm.png"
 import { connectWallet } from '../../utils/web3Functions'
 import {Overlay, SideBarContainer, Icon, CloseIcon,
   SideBarWrapper, SideBarMenu,SideBarLink,
-  SideBtnWrap, SideBarbtnLink, SideBarLinkConnected, SideBarGlobalWrapper, Logo } from './SideBarElements'
+  SideBtnWrap, SideBarbtnLink, SideBarLinkConnected, SideBarGlobalWrapper, WalletAddress, Logo } from './SideBarElements'
 
 
 function SideBar({isOpen, toggle, walletAddress, setWalletAddress}) {
+
+    const connectWalletHandler = () => {
+        connectWallet(setWalletAddress)
+      }
 
   return (
     
@@ -28,9 +32,17 @@ function SideBar({isOpen, toggle, walletAddress, setWalletAddress}) {
                         Wallet
                         </SideBarLink>*/}
                         {!walletAddress ? 
-                <SideBarLink onClick = {connectWallet}>Connect Wallet</SideBarLink> : 
+                <SideBarLink onClick = {connectWalletHandler}>Connect Wallet</SideBarLink> : 
                 <SideBarLink > Wallet Connected</SideBarLink>}
+                 {walletAddress && <WalletAddress>{walletAddress.slice(0,5)} ... {walletAddress.slice(-5)}</WalletAddress>}
+                <SideBtnWrap>
+                    <SideBarbtnLink href="#mint">
+                    Mint
+                    </SideBarbtnLink>
+                </SideBtnWrap>
+
                 </SideBarMenu> 
+                
                 
             </SideBarWrapper>
         </SideBarContainer>

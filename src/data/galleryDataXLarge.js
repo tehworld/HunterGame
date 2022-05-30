@@ -12,9 +12,17 @@ import galleryImage11 from "../images/vampire.png"
 import galleryImage12 from "../images/undead.png"
 import galleryImage13 from "../images/gallery13.png"
 import galleryImage14 from "../images/gallery14.png"
+import galleryImage15 from "../images/gallery6.png"
+import galleryImage16 from "../images/gallery1.png"
+import galleryImage17 from "../images/gallery3.png"
+import galleryImage18 from "../images/gallery4.png"
+import galleryImage19 from "../images/gallery5.png"
+import galleryImage20 from "../images/gallery8.png"
+import galleryImage21 from "../images/gallery9.png"
+import galleryImage22 from "../images/gallery2.png"
 
 
-export const galleryDataLarge = [
+export const galleryDataXLarge = [
     {
     image: galleryImage1,
 },
@@ -74,4 +82,43 @@ export const galleryDataLarge = [
     image: galleryImage14,
 },
 
+{
+
+    image: galleryImage15,
+},
+
+{
+
+    image: galleryImage16,
+},
+
+{
+
+    image: galleryImage17,
+},
+
+{
+
+    image: galleryImage18,
+},
+
+{
+
+    image: galleryImage19,
+},
+
+{
+
+    image: galleryImage20,
+},
+
+{
+
+    image: galleryImage21,
+},
+
+{
+
+    image: galleryImage22,
+},
 ]
