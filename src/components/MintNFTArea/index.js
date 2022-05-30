@@ -1,15 +1,19 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import ReactLoading from "react-loading"
-import { Title, StyledButton, MintingWrapper, MintNumber, MintingButtonContainer, LoadingWrapper, NumberControlWrapper, NumberControl } from './MintNFTElements'
+import { Title, StyledButton, MintingWrapper, MintNumber, MintingButtonContainer, 
+    LoadingWrapper, NumberControlWrapper, NumberControl, SuccessTextWrapper, OpenseaText } from './MintNFTElements'
 import coverImage from "../../images/pre-reveal-cover.png"
 import {getTotalNFTsMinted, mintNft, connectWallet} from "../../utils/web3Functions"
 
 import ethIcon from "../../images/eth-icon.png"
 import {EthIcon} from "../MintingArea/MintingAreaElements"
+import {setupEventListener} from "../../utils/web3Functions"
+
 function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walletAddress, setWalletAddress}) {
 
     const[isLoading, setIsLoading] = useState(false)
     const [number, setNumber] = useState(0)
+    let renderedTokenId
     let price
 
     const numberMinted = () => {
@@ -48,8 +52,13 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
     } else {
         setNumber(0)
     }
-        
     }
+
+    
+   
+    useEffect(() => {
+     setupEventListener(smartContractAbi, setWalletAddress, renderedTokenId)
+    }, [walletAddress, smartContractAbi, smartContractAddress, renderedTokenId, setWalletAddress])
 
   return (
     <>
@@ -69,8 +78,11 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
         <StyledButton onClick={mintNow} isLoading={isLoading}> {isLoading === false ? 
         "Mint" : 
         <LoadingWrapper><ReactLoading type={"cylon"} color={"#57e2ad"} /></LoadingWrapper>}</StyledButton> }
-            
         </MintingButtonContainer>
+        { renderedTokenId ?
+        <SuccessTextWrapper><p>Success! NFT Minted. </p> <br></br><OpenseaText>See in
+                       <a style = {{color:"white"}} href={`https://opensea.io/assets/${smartContractAddress}/${renderedTokenId}`}> Opensea</a></OpenseaText></SuccessTextWrapper>
+                        : "" }
             
         </MintingWrapper>
     </>

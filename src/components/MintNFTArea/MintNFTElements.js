@@ -15,6 +15,7 @@ export const StyledButton = styled.button`
     color: #ffffff;
     background: ${({isLoading}) => (!isLoading ? "#000" : "transparent")};
     border: ${({isLoading}) =>(!isLoading ? "1px solid #57e2ad" : "0")};
+    
     &:hover {
         cursor: pointer;
         background: #57e2ad;
@@ -123,4 +124,44 @@ export const StyledButton = styled.button`
     }
 
     `
+export const SuccessTextWrapper = styled.div`
+color : #57e2ad;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 1;
+font-family: 'hiragino-light';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+margin: 0;
+text-align: center;
+padding-top: 1rem;
 
+@media screen and (max-width:1280px){
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 0;
+    margin-top:0;
+    
+}
+
+@media screen and (max-width: 850px){
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 8px;
+}
+`
+
+export const OpenseaText = styled.p`
+padding-left: 1rem;
+
+@media screen and (max-width:1280px){
+    padding-left: 1rem;
+}
+@media screen and (max-width:850px){
+    padding-left:0;
+}
+
+`

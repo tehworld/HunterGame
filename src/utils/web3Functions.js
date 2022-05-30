@@ -88,7 +88,7 @@ export const connectWallet = async(setWalletAddress) => {
     }  
   }
 
-  export const setupEventListener = async (smartContractAbi, smartContractAddress, renderedTokenId) => {
+  export const setupEventListener = async (smartContractAbi, smartContractAddress, RenderedTokenId) => {
 
     //most of this looks as our function mintNFT
     try {
@@ -105,7 +105,9 @@ export const connectWallet = async(setWalletAddress) => {
         //We "capture" the event that the contract emits
         connectedContract.on("NFTMinted", (number, tokenId, from) => {
           console.log(from, tokenId.toNumber())
-          renderedTokenId = tokenId.toNumber()
+          RenderedTokenId = tokenId.toNumber()
+        
+          
 
         });
         console.log("Setting up event Listener!")
