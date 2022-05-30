@@ -1,7 +1,8 @@
 import React,{useState, useEffect} from 'react'
 import ReactLoading from "react-loading"
 import { Title, StyledButton, MintingWrapper, MintNumber, MintingButtonContainer, 
-    LoadingWrapper, NumberControlWrapper, NumberControl, SuccessTextWrapper, OpenseaText } from './MintNFTElements'
+    LoadingWrapper, NumberControlWrapper, NumberControl,PriceText, SuccessTextWrapper, OpenseaText,
+PriceContainer } from './MintNFTElements'
 import coverImage from "../../images/pre-reveal-cover.png"
 import {getTotalNFTsMinted, mintNft, connectWallet} from "../../utils/web3Functions"
 
@@ -64,15 +65,19 @@ function MintNFT({smartContractAbi, smartContractAddress, setMintedNumber, walle
     <>
         <MintingWrapper id="mint">
             <Title style={{marginBottom:"2rem"}}>MINT YOUR HUNTER</Title>
-            <MintNumber>{number}</MintNumber>
             <NumberControlWrapper>
                 <NumberControl onClick={substractNumber}>-</NumberControl>
+                <MintNumber>{number}</MintNumber>
                 <NumberControl onClick={addNumber}>+</NumberControl>
             </NumberControlWrapper>
             
         <MintingButtonContainer>
-            <EthIcon src={ethIcon}/>
-            <h4 style={{fontSize:"20px"}}>{`${(price*number).toFixed(1)} ETH`}</h4>
+            <PriceContainer>
+                <EthIcon style={{height:"36px", width:"36px",maxHeight:"52px", 
+                maxWidth:"52px", marginTop:"-2.25rem", marginRight:"0.75rem"}}src={ethIcon}/>
+                <PriceText>{`${(price*number).toFixed(1)} ETH`}</PriceText>
+            </PriceContainer>
+
             {!walletAddress ? 
             <StyledButton onClick={connectWalletHandler} isLoading={isLoading}>Mint</StyledButton> 
             :

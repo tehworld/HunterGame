@@ -23,7 +23,7 @@ function MintingArea({mintedNumber}) {
     valueProgress3 = (((mintedNumber-8999)/1000)*100)
   }
 
-  let needsJump = useMediaQuery({query:"(max-width: 1100px)"})
+  let needsJump = useMediaQuery({query:"(max-width: 1090px)"})
 
 
   return (
@@ -40,7 +40,7 @@ function MintingArea({mintedNumber}) {
             </MintButtonWrapper>
           </BatchCard>
           <BatchCard>
-            <h3>3000 to 8.999 NFTs</h3>
+            <h3>3000 to 8.999 {needsJump && <br></br>} NFTs</h3>
             <ProgressBar valueProgress={valueProgress2}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
@@ -48,7 +48,7 @@ function MintingArea({mintedNumber}) {
             </MintButtonWrapper>
           </BatchCard>
           <BatchCard style={{paddingRight:"0"}}>
-            <h3>9000 to 9999 NFTs</h3>
+            <h3>9000 to 9999 {needsJump && <br></br>} NFTs</h3>
             <ProgressBar valueProgress={valueProgress3}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
