@@ -1,8 +1,8 @@
-import React from "react"
+
 
 export const faqData = [
     {
-        question: "What is the Mint date?",
+        question: "When is the mint date?",
         answer: `<ul>
         <li>Public launch will be on XXX date.</li>
         <li>Reveal date will be on XXX date.</li>
@@ -10,12 +10,12 @@ export const faqData = [
         ,
     },
     {
-        question: "What’s the mint price and quantity?",
+        question: "What is the mint price and quantity?",
         answer: `There will be 10,000 Hunters in total.
         <ul>
         <li>0.1 eth from 0 to 2999 NFT</li>
         <li>0.2 eth from 3000 to 8999 NFT</li>
-        <li>0.3 eth from 9000 to 10000 NFT</li>
+        <li>0.3 eth from 9000 to 9999 NFT</li>
         </ul> 
         `
     },

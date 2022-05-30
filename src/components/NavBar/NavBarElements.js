@@ -1,10 +1,15 @@
 import styled from "styled-components"
 import {NavLink as Link} from "react-router-dom"
 import {BiMenuAltLeft} from "react-icons/bi"
+import {Colors} from "../../Themes/ThemeOne"
 
 export const Nav = styled.nav`
-    background: #fff;
-    height: 100px;
+    background: transparent;
+    
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 80px;
     width: 100vw;
     min-width: 375px;
     display: flex;
@@ -20,9 +25,9 @@ export const Nav = styled.nav`
 `
 
 export const NavLink = styled.a`
-    color: #000;
+    color: #fff;
     font-family: "fleshandblood";
-    font-size: 22px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -31,20 +36,24 @@ export const NavLink = styled.a`
     max-height: 2px;
     cursor: pointer;
     opacity: 0.75;
+    flex-wrap: nowrap;
     
-
-    &.active {
-        opacity: 1;
+    &:hover {
+        color: ${Colors.primary};
     }
 `
 
 export const Bars = styled(BiMenuAltLeft)`
-    color:#000;
+    color:#fff;
+
+    &:hover {
+        color: ${Colors.primary};
+    }
 `
 
 export const BarsWrapper = styled.div`
         display: none;
-        color: #000;
+        color: #fff;
 
     @media screen and (max-width: 768px){
         display: flex;
@@ -61,9 +70,11 @@ export const BarsWrapper = styled.div`
 
 export const NavMenu = styled.div`
     display: flex;
-    flex: 2;
+    justify-content: flex-end;
+    flex: 1;
+    flex-grow:1.5;
     align-items: center;
-    
+    padding-right:1rem;
     margin-right: 0.5rem;
 
 
@@ -82,29 +93,35 @@ export const NavBtn = styled.nav`
     };
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
     border-radius: 4px;
-    background: #000;
+    font-family: "fleshandblood";
+    font-size: 1rem;
+    opacity: 0.75;
+    background: transparent;
     padding: 10px 22px;
     color: #fff;
-    border: none;
+    border: 1px solid ${Colors.surface};
     outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    margin-right: 24px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff ;
-        color: #000;
-        border: 1px solid #000;
+        
+        color: ${Colors.primary};
+        border: 1px solid ${Colors.primary}
+        ;
     }
 `
 
 export const NavLogoLink = styled(Link)`
-    color: #000;
+    color: #fff;
     justify-self: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-shrink:0.5 ;
     cursor: pointer;
     font-size: 1.5rem;
     display: flex;
@@ -118,18 +135,47 @@ export const NavLogoLink = styled(Link)`
         flex:4;
         margin:0;
         padding-right:9rem;
+        justify-content: center;
 
     }
     
     `;
 export const NavLogo = styled.img`
-        height: 90px;
-        width: 90px;
+        height: 70px;
+        width: 70px;
 
     @media screen and (max-width: 768px){
         height: 48px;
         width: 48px;
         
     }
+`
+
+export const WalletAddress = styled.p`
+    color: white;
+    opacity: 0.7;
+    margin-top:0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 1280px) {
+        
+    }
+
+    @media screen and (max-width: 850px){
+    font-size:12px;
+
+    
+    
+}
+`
+
+export const WalletWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 `
     

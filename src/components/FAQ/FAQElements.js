@@ -16,11 +16,12 @@ export const AccordionWrapper = styled.div`
 export const Title = styled.h2`
     color: white;
     font-family: "fleshandblood";
+    font-weight: lighter;
     font-size: 3vw;
     padding-top: 6vw;
 
     @media screen and (max-width:768px){
-        font-size: 5vw;
+        font-size: 28px;
     }
     
 `
@@ -69,7 +70,7 @@ export const AccordionIcon = styled.div`
 
 export const AccordionContent = styled.div`
     color: white;
-    font-size: 1.5vw;
+    font-size: 1vw;
     overflow: hidden;
     display: ${({selected, index}) => (selected === index ? "block": "none")};
     transition: all 0.2s ease-in-out;

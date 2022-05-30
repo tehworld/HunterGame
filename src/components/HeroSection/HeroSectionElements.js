@@ -4,8 +4,9 @@ import HunterImageMobile from "../../images/heroImageMobile.png"
 import HunterImageDesktop from "../../images/heroImageDesktop.png"
 
 export const HeroContainer = styled.div`
-    height: 100vh;
-    width: auto;
+    height: auto;
+    width: 100%;
+    min-height: 780px;
     background-image: url(${HunterImageDesktop});
     background-size: 'contain';
     overflow: 'hidden';
@@ -15,51 +16,116 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 2rem;
+
+    @media screen and (max-width: 2100px){
+        height: auto;
+        width: 100%;
+        min-height: 680px;
+        
+    }
+    
 
     @media screen and (max-width: 2000px){
-        height: 80vh;;
+        min-height: 650px;
+        
+    }
+
+    @media screen and (max-width: 1800px){
+        min-height: 600px;
+        
+    }
+
+    @media screen and (max-width: 1800px){
+        min-height: 550px;
+        
     }
 
     @media screen and (max-width: 1500px){
-        height: 60vh;
+        min-height: 500px;
+
+    }
+
+    @media screen and (max-width: 1300px){
+        min-height: 450px;
 
     }
 
     @media screen and (max-width: 1200px){
-        height: 50vh;
+        min-height: 400px;
+        padding-top: 1.5rem;
 
+    }
+
+    @media screen and (max-width: 1100px){
+        min-height: 350px;
+        padding-top: 1.5rem;
+
+    }
+
+    @media screen and (max-width: 1000px){
+        min-height: 330px;
+        padding-top: 0;
+    
     }
 
     @media screen and (max-width: 900px){
-        height: 40vh;
-
+        min-height: 300px;
+        padding-top: 0;
+        margin-top: 0;
+    
     }
-
 
     @media screen and (max-width: 768px){
         background-image: url(${HunterImageMobile});
-        height: 80vh;
-     
+        height: auto;
+        width: 100%;
+        min-height: 550px;
+        padding-top: 200px;
         align-items: flex-end;
 
 }
 
+
     @media screen and (max-width: 690px){
         background-image: url(${HunterImageMobile});
-        height: 70vh;
+        height: auto;
+        width: 100%;
+        min-height: 500px;
 
 }
 
     @media screen and (max-width: 590px){
         background-image: url(${HunterImageMobile});
-        height: 60vh;
+        height: auto;
+        width: 100%;
+        min-height: 410px;
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 530px){
         background-image: url(${HunterImageMobile});
-        height: 50vh;
+        height: auto;
+        width: 100%;
+        min-height: 320px;
 
+}
+
+@media screen and (max-width: 480px){
+        background-image: url(${HunterImageMobile});
+        height: auto;
+        width: 100%;
+        padding-top: 0px;
+        min-height: 450px;
+    
+
+}
+
+@media screen and (max-width: 400px){
+    height: auto;
+    width: 100%;
+    padding-top: 0px;
+    min-height: 400px;
 }
 `
 
