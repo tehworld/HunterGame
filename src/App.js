@@ -41,7 +41,7 @@ function App() {
 const calculateTimeLeft = () => {
   let year = new Date().getFullYear();
   //Month day year
-  let difference = +new Date(`06/01/${year}`) - +new Date();
+  let difference = +new Date(`06/01/${year} 09:30:00`) - +new Date();
 
   let timeLeft = {};
 
@@ -51,8 +51,16 @@ const calculateTimeLeft = () => {
       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60)
-    };
-  }
+    }}
+
+    else {
+      timeLeft = {
+        dy: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+      }
+    }
 
   return timeLeft;
 }

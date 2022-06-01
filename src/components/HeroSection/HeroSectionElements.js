@@ -6,7 +6,8 @@ import HunterImageDesktop from "../../images/heroImageDesktop.png"
 export const HeroContainer = styled.div`
     height: auto;
     width: 100%;
-    min-height: 780px;
+    /* min-height: 780px; */
+    min-width: 375px;
     background-image: url(${HunterImageDesktop});
     background-size: 'contain';
     overflow: 'hidden';
@@ -18,7 +19,7 @@ export const HeroContainer = styled.div`
     align-items: center;
     padding-top: 2rem;
 
-    @media screen and (max-width: 2100px){
+    @media screen and (min-width: 2100px){
         height: auto;
         width: 100%;
         min-height: 680px;
@@ -26,97 +27,115 @@ export const HeroContainer = styled.div`
     }
     
 
+    @media screen and (max-width: 2100px){
+        height: auto;
+        width: 100%;
+        min-height: 750px;
+        
+    }
+    
+
     @media screen and (max-width: 2000px){
-        min-height: 650px;
+        min-height: 720px;
         
     }
 
     @media screen and (max-width: 1800px){
-        min-height: 600px;
-        
-    }
-
-    @media screen and (max-width: 1800px){
-        min-height: 550px;
+        min-height: 620px;
+        height: 620px;
+        width: auto;
         
     }
 
     @media screen and (max-width: 1500px){
         min-height: 500px;
+        height: 510px;
+        width: auto;
 
     }
 
     @media screen and (max-width: 1300px){
         min-height: 450px;
+        height: 450px;
+        width: auto;
 
     }
 
     @media screen and (max-width: 1200px){
         min-height: 400px;
+        height: 420px;
+        width: auto;
         padding-top: 1.5rem;
 
     }
 
     @media screen and (max-width: 1100px){
         min-height: 350px;
+        height: 370px;
+        width: auto;
         padding-top: 1.5rem;
 
     }
 
     @media screen and (max-width: 1000px){
         min-height: 330px;
+        height: 350px;
+        width: auto;
         padding-top: 0;
     
     }
 
     @media screen and (max-width: 900px){
         min-height: 300px;
+        height: 320px;
+        width: auto;
         padding-top: 0;
         margin-top: 0;
     
     }
 
     @media screen and (max-width: 768px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 550px;
-        padding-top: 200px;
-        align-items: flex-end;
+        background-position: center;
+        /* min-height: 550px;
+        padding-top: 200px; */
+        align-items: flex-start;
 
 }
 
 
     @media screen and (max-width: 690px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 500px;
+        /* min-height: 500px; */
 
 }
 
     @media screen and (max-width: 590px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 410px;
+        /* min-height: 410px; */
 
 }
 
 @media screen and (max-width: 530px){
-        background-image: url(${HunterImageMobile});
+        /* background-image: url(${HunterImageMobile}); */
         height: auto;
         width: 100%;
-        min-height: 320px;
+        /* min-height: 320px; */
 
 }
 
 @media screen and (max-width: 480px){
-        background-image: url(${HunterImageMobile});
-        height: auto;
+        /* background-image: url(${HunterImageMobile}); */
+        height: 20%;
         width: 100%;
-        padding-top: 0px;
-        min-height: 450px;
+        /* padding-top: 0px;
+        min-height: 450px; */
     
 
 }
@@ -124,8 +143,8 @@ export const HeroContainer = styled.div`
 @media screen and (max-width: 400px){
     height: auto;
     width: 100%;
-    padding-top: 0px;
-    min-height: 400px;
+    /* padding-top: 0px;
+    min-height: 400px; */
 }
 `
 

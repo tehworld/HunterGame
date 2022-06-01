@@ -20,13 +20,13 @@ function RoadMap({daysHoursMinSecs}) {
       <Subtitle>"This is just the beginning"</Subtitle>
       <RoadMapStagesWrapper>
         <RoadMapCardContainer>
-        <h3>1st June 2022 <br></br> 12:00 UTC</h3>
+        <h3>1st June 2022 <br></br> 09:30 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}}/>
           <StageCardWrapper>NFT Sales Launch</StageCardWrapper>
         </RoadMapCardContainer>
         <RoadMapCardContainer>
-          <h3>31st September 2022 <br></br> 12:00 UTC</h3>
+          <h3>6th June 2022 <br></br> 00:00 UTC</h3>
           <img src={point} alt="point" />
           <img src={line} alt="line" style={{margin: "1rem 0"}} />
           <StageCardWrapper> NFT Reveal Date</StageCardWrapper>
