@@ -21,7 +21,7 @@ export const faqData = [
     },
     {
         question: "What is the utility / roadmap ?",
-        answer: `Teh hunter treasury will be funded with all of the proceeds from the hunters sales.
+        answer: `The hunter treasury will be funded with all of the proceeds from the hunters sales.
         This Treasury will be used to fund the creation of a Metaverse world, as well as the creation 
         of deep dive report and the formation of a Hunter Guild.`
     },
