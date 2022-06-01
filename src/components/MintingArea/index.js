@@ -32,7 +32,7 @@ function MintingArea({mintedNumber}) {
         <Title> BATCH QUANTITY</Title>
         <BatchesWrapper>
           <BatchCard>
-            <h3>0 to 2.999 {needsJump && <br></br>}NFTs</h3>
+            <h3>0 to 2999 {needsJump && <br></br>}NFTs</h3>
             <ProgressBar valueProgress={valueProgress1}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>
@@ -40,7 +40,7 @@ function MintingArea({mintedNumber}) {
             </MintButtonWrapper>
           </BatchCard>
           <BatchCard>
-            <h3>3000 to 8.999 {needsJump && <br></br>} NFTs</h3>
+            <h3>3000 to 8999 {needsJump && <br></br>} NFTs</h3>
             <ProgressBar valueProgress={valueProgress2}/>
             <MintButtonWrapper>
               <EthIcon src={ethIcon}/>

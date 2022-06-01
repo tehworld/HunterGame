@@ -17,6 +17,7 @@ import {smartContractAbi} from "./utils/smartContractAbi"
 import {smartContractAddress} from "./utils/smartContractAddress"
 import {checkIfWalletIsConnected} from "./utils/web3Functions"
 import MintNFT from "./components/MintNFTArea";
+import { parse } from "@ethersproject/transactions";
 
 function App() {
 
@@ -40,8 +41,11 @@ function App() {
 
 const calculateTimeLeft = () => {
   let year = new Date().getFullYear();
+
   //Month day year
-  let difference = +new Date(`06/01/${year} 09:30:00`) - +new Date();
+  let difference = Date.parse(`06/06/${year} 00:00:00 GMT`) - Date.now();
+  // console.log(new Date(Date.now()).toUTCString())
+  // console.log(new Date (Date.parse(`06/06/${year} 00:00:00 GMT`)).toUTCString())
 
   let timeLeft = {};
 

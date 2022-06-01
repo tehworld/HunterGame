@@ -13,7 +13,7 @@ function BackStory() {
           <Text>The 10,000 Hunters are part of a collective entity tied to a common goal of forging a New World. 
             The individual who partisipates will partake in the creation of a completely decentralised and autonomous 
             perpetual community. Upon building, this Metaverse experiment will thrive, allowing inclusivity for others
-            who may otherwise be excluded or marginalized.This is for everyone to engage in their role and to be united 
+            who may otherwise be excluded or marginalized. This is for everyone to engage in their role and to be united 
             in the core of the vision, to create a new decentralized world. 
           </Text>
           <Text>This New World will grow far beyond what any of us could have ever imagined, this New World will be 
