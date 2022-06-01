@@ -13,9 +13,9 @@ export const connectWallet = async(setWalletAddress) => {
       console.log("Connected to chain " + chainId);
   
         // String, hex code of the chainId of the Rinkebey test network. This will change on production
-      const rinkebyChainId = "0x4"; 
-      if (chainId !== rinkebyChainId) {
-        alert("You are not connected to the Rinkeby Test Network!");
+      const mainnetChainId = "0x1"; 
+      if (chainId !== mainnetChainId) {
+        alert("You are not connected to Ethereum Mainnet!");
       }
       //method to request access to account
       const accounts = await ethereum.request({ method: "eth_requestAccounts" });
@@ -47,7 +47,7 @@ export const connectWallet = async(setWalletAddress) => {
 
         setIsLoading(true)
         await nftTxn.wait();
-        console.log(`Mined, see transaction: http://rinkeby.etherscan.io/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: http://etherscan.io/tx/${nftTxn.hash}`);
         
         setIsLoading(false)
         //getTotalNFTsMintedSoFar();
