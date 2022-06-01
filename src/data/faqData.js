@@ -4,8 +4,8 @@ export const faqData = [
     {
         question: "When is the mint date?",
         answer: `<ul>
-        <li>Public launch will be on XXX date.</li>
-        <li>Reveal date will be on XXX date.</li>
+        <li>Public launch will be on 1st June 2022.</li>
+        <li>Reveal date will be on 6th June 2022.</li>
         </ul>` 
         ,
     },
