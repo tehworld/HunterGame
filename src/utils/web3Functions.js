@@ -12,7 +12,7 @@ export const connectWallet = async(setWalletAddress) => {
       let chainId = await ethereum.request({ method: 'eth_chainId' });
       console.log("Connected to chain " + chainId);
   
-        // String, hex code of the chainId of the Rinkebey test network. This will change on production
+        // String, hex code of Mainnet
       const mainnetChainId = "0x1"; 
       if (chainId !== mainnetChainId) {
         alert("You are not connected to Ethereum Mainnet!");
